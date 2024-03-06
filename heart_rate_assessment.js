@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 
-function calculateMinMaxMed(data) {
+function calculateMinMaxMedian(data) {
   const dailyData = {};
 
   for (const measurement of data) {
@@ -69,7 +69,7 @@ fs.readFile('heartrate.json', 'utf8', (err, data) => {
 
   const heartRateData = JSON.parse(data);
 
-  const MinMaxMed = calculateMinMaxMed(heartRateData);
+  const MinMaxMed = calculateMinMaxMedian(heartRateData);
 
   fs.writeFile('output.json', JSON.stringify(MinMaxMed, null, 2), (err) => {
     if (err) {
