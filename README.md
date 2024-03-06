@@ -63,7 +63,12 @@ This will execute the script, process the heartrate.json file, and write the cal
 The output.json file will contain an array of objects, where each object represents the statistics for a day, with the following properties:
 
 date: String (YYYY-MM-DD)
+
 min: Number (minimum beats per minute)
+
 max: Number (maximum beats per minute)
+
 median: Number (median beats per minute)
+
 latestDataTimestamp: String (timestamp of the last measurement in the day)
+
