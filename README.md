@@ -24,14 +24,18 @@ Instructions on Build and Run the Project:
 
 1. Clone the repository:
      git clone "git repository link" (in this case, git clone  https://github.com/Ruchitha-Dara/Shared)
+
 2. Install dependencies:
    
 cd "your project folder path"
+
 npm install
 
 4. Prepare your data:
+
 Ensure you have a JSON file named heartrate.json in the project directory.
 The heartrate.json file should contain an array of objects, where each object represents a heart rate measurement with the following structure:
+
 JSON
 {
     "beatsPerMinute": Number, // beats per minute
@@ -42,7 +46,9 @@ JSON
 }
 
 5. Run the script:
+
 node heart_rate_assessment.js
+
 This will execute the script, process the heartrate.json file, and write the calculated statistics to the output.json file in the same directory.
 
 Expected Output:
