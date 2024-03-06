@@ -44,10 +44,10 @@ The heartrate.json file should contain an array of objects, where each object re
 
 ```JSON
 {
-    "beatsPerMinute": Number, // beats per minute
+    "beatsPerMinute": "number", 
     "timestamps": {
-        "startTime": "YYYY-MM-DDTHH:mm:ss", // start timestamp
-        "endTime": "YYYY-MM-DDTHH:mm:ss" // end timestamp
+        "startTime": "YYYY-MM-DDTHH:mm:ss",
+        "endTime": "YYYY-MM-DDTHH:mm:ss"
     }
 }
 ```
