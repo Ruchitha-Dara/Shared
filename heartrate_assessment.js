@@ -45,7 +45,7 @@ function calculateMinMaxMed(data) {
 }
 
 function calculateMedian(data) {
-  data.sort((a, b) => a.beatsPerMinute - b.beatsPerMinute); // Sort by bpm
+  data.sort((a, b) => a.beatsPerMinute - b.beatsPerMinute);
   const midIndex = Math.floor(data.length / 2);
   return data.length % 2 === 0
     ? (data[midIndex].beatsPerMinute + data[midIndex - 1].beatsPerMinute) / 2
